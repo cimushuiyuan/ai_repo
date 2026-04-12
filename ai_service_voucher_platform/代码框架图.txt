@@ -1,0 +1,17 @@
+ai_service_voucher_platform/
+├── policy_source/                  # 1. 政策库：甲方人员只需将新文件拖到这里
+│   └── README.md                   #    (说明文件)
+├── config/
+│   └── policy_rules.yaml             # 2. 核心政策规则
+├── src/
+│   ├── __init__.py                 # (新建一个空文件即可)
+│   ├── models.py                     # 3. 数据模型
+│   ├── utils.py                      # 4. 辅助函数
+│   ├── policy_ingestor.py          # 5. 知识库构建器 (已升级)
+│   └── compliance_classifier.py      # 6. 核心审核逻辑 (无变化)
+├── update_knowledge_base.py        # 7. 独立的知识库更新脚本 (新增)
+├── watcher.py                      # 8. 文件监控“守护进程” (新增)
+├── requirements.txt                  # 10. Python依赖 (已更新)
+|── README.md                         # 11. 项目总说明 (已更新)
+└── api_demo.py                     # --- 新增的演示接口模拟脚本 ---
+
